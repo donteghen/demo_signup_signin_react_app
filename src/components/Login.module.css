@@ -1,3 +1,131 @@
-.test{
-    color:red
+.mainContainer{
+    background-color: #fae5f1;
 }
+.innerContainer{
+    overflow: hidden;
+}
+
+.left_InnerContainer{
+    background-color:#7b79fc;
+    width: 100%; 
+    margin:0 0;
+}
+
+.right_InnerContainer{
+    background-color: white;
+    width:100%;
+    margin:0 0;
+}
+.logo{
+    padding: 20px 10px;
+}
+.coinBox{
+    width: 200px;
+    padding: 0px 70px;
+}
+.heading{
+    margin: 0 0;
+    padding: 20px 0;
+}
+.inputContainer{
+    margin: 30px 0;
+}
+.centerContent{
+    width: 80%;
+    margin: auto;
+}
+.lableText{
+    color: #999999;
+    font-size: 11px;
+}
+
+.inputText{
+    border: 1px solid #999999;
+    width: 200px;
+    height: 20px;
+    padding: 4px 15px;
+    border-radius: 5px ;
+    outline: none;
+}
+
+.submitBtn{
+    background-color: #ea8675;
+    width: 230px;
+    height: 30px;
+    padding: 4px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.error{
+    background-color: #ea8675;
+    color:white;
+    width: 220px;
+    height: 20px;
+    margin-top: 0;
+    padding-left: 10px;
+    font-size: 11px;
+}
+.long_error{
+    background-color: #ea8675;
+    color:white;
+    width: 220px;
+    height: 20px;
+    margin-top: 0;
+    padding:4px 6px;
+    font-size: 11px;
+}
+/********************************** effect section *********************************************/
+
+.submitBtn:hover{
+    background-color: #e7664f;
+}
+.inputText:focus{
+    border-color: #ea8675;
+}
+
+/********************************** Media Queries section *********************************************/
+
+@media screen and (min-width: 640px) {
+    .mainContainer{
+        background-color: #fae5f1;
+        padding: 50px 50px;
+    
+    }
+    .innerContainer{
+        margin: 10px 10px;
+        overflow: hidden;
+    }
+    .innerContainer{
+        display:flex;
+        background-color: (209, 28, 28);
+        margin: 10px 10px;
+        overflow: hidden;
+    }
+    .centerContent{
+        width: 80%;
+        margin: auto;
+        
+    }
+    .heading{
+        margin-top:80px;
+         margin-bottom:30px;
+    }
+    .left_InnerContainer{
+        background-color:#7b79fc;
+        width: 60%;
+        border-radius: 15px 0 0 15px;
+    }
+    .logo{
+         margin: 20px 0;
+         padding: 10px 30px;
+    }
+    .coinBox{
+        width: 600px;
+    }
+    .right_InnerContainer{
+        background-color: white;
+        width:40%;
+        border-radius: 0 15px 15px 0;
+    }
+  }
