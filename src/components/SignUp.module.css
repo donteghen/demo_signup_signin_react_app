@@ -1,0 +1,71 @@
+.mainContainer{
+    background-color: #fae5f1;
+    padding: 50px 50px;
+
+}
+.innerContainer{
+    display:flex;
+    background-color: (209, 28, 28);
+    margin: 10px 10px;
+    overflow: hidden;
+}
+
+.left_InnerContainer{
+    background-color:#7b79fc;
+    width: 60%;
+    border-radius: 15px 0 0 15px;
+}
+
+.right_InnerContainer{
+    background-color: white;
+    width:40%;
+    border-radius: 0 15px 15px 0;
+}
+
+.centerContent{
+    width: 80%;
+    margin: auto;
+}
+
+.inputContainer{
+    margin: 30px 0;
+}
+.lableText{
+    color: #999999;
+    font-size: 11px;
+}
+
+.inputText{
+    border: 1px solid #999999;
+    width: 200px;
+    height: 20px;
+    padding: 4px 15px;
+    border-radius: 5px ;
+    outline: none;
+}
+
+.submitBtn{
+    background-color: #ea8675;
+    width: 230px;
+    height: 30px;
+    padding: 4px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.error{
+    background-color: #ea8675;
+    color:white;
+    width: 220px;
+    height: 20px;
+    margin-top: 0;
+    padding-left: 10px;
+}
+/********************************** effect section *********************************************/
+
+.submitBtn:hover{
+    background-color: #e7664f;
+}
+.inputText:focus{
+    border-color: #ea8675;
+}
