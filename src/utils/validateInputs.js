@@ -1,10 +1,10 @@
-import {isEmail, isAlpha, isMobilePhone, isStrongPassword} from 'validator'
+import {isEmail, isMobilePhone, isStrongPassword} from 'validator'
 export const signUpValidator = (data) => {
     
     const errors = {};
     if(data.full_name){
-        if(!isAlpha(data.full_name) || data.full_name.length < 4){
-            errors.full_name = 'Please enter a valide full name'
+        if(!/(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})/i.test(data.full_name)){
+            errors.full_name = 'Please enter a valide full name(ex: tom hardy)'
         }
     }
     if(!data.full_name){
